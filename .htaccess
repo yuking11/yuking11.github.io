@@ -1,0 +1,3 @@
+<Files ~ ".(gz|otf|ttf|eot|woff)$">
+	Header set Cache-Control "max-age=2592000"
+</Files>

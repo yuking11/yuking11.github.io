@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yuking11's blog</title>
+  <id>http://yuking11.net/blog/</id>
+  <link href="http://yuking11.net/blog"/>
+  <link href="http://yuking11.net/blog/feed.xml" rel="self"/>
+  <updated>2014-01-20T13:56:00Z</updated>
+  <author>
+    <name>yuking11</name>
+  </author>
+  <entry>
+    <title>Middlemanでblog始めました</title>
+    <link rel="alternate" href="/blog/2014/01/20/start-middleman.html"/>
+    <id>/blog/2014/01/20/start-middleman.html</id>
+    <published>2014-01-20T13:56:00Z</published>
+    <updated>2014-01-20T13:56:00Z</updated>
+    <author>
+      <name>yuking11</name>
+    </author>
+    <content type="html">&lt;p&gt;2014年、何か新しいことにチャレンジしてみようか、と思い立ってWeb制作に関するblogを始めることにしました。&lt;/p&gt;
+
+&lt;p&gt;マークアップエンジニアとしてWeb制作に関わってきた中で、htmlのこと、cssのこと、javascriptのこと等々、幾度となくGoogle先生にお世話になったのですが、知りたいことがピンポイントで見つからず苦労することも多々ありました。&lt;/p&gt;
+
+&lt;p&gt;というのは表向きの理由で実際のところは備忘録的意味合いが大きかったり。&lt;/p&gt;
+
+&lt;p&gt;で、始めるにあたってまず環境どうすっぺ、と考えていたところ「&lt;a href="http://middlemanapp.com/jp/"&gt;Middleman&lt;/a&gt;オヌヌメ」と同僚からの助言。なんのこっちゃと思い調べてみると&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Middleman はモダンな web 開発のあらゆるショートカットやツールを採用した静的サイトジェネレータです。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;とのこと。&lt;br&gt;
+しかもblog機能までついている。なるほど、こりゃあいい。採用。&lt;br&gt;
+さらに調べてみると、&lt;a href="http://pages.github.com/"&gt;Github Pages&lt;/a&gt;でホストすると捗るらしいことが判明。採用。&lt;/p&gt;
+
+&lt;p&gt;そんなこんなで色々あってMiddleman blog＆Github Pagesという環境でblogをスタートすることになりました。&lt;/p&gt;
+
+&lt;p&gt;「色々」の部分（Middlemanの構築方法とか）が大事なわけですが、その当たりはおいおい紹介していこうと思います。&lt;/p&gt;
+
+&lt;p&gt;とりあえずしょっぱなはこんなところで。&lt;/p&gt;
+
+&lt;p&gt;おわり。&lt;/p&gt;
+</content>
+  </entry>
+</feed>
