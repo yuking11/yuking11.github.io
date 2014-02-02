@@ -1142,6 +1142,11 @@ blockquote:before { position: absolute; left: 0; top: 0; content: "“"; font-si
 blockquote > *:first-child { margin-top: 0; }
 blockquote > *:last-child { margin-bottom: 0; }
 
+/* 404
+--------------------------------------------- */
+.section__404 { text-align: center; }
+.section__404 .fa-angle-double-right { padding-right: .2em; }
+
 /* =====================================================
 
 set Tablet Small 32.500em(520px) and more
@@ -1171,7 +1176,10 @@ set Tablet Small 32.500em(520px) and more
   /* footer --------------------------------------------- */
   /* pagenate --------------------------------------------- */
   /* entrynate --------------------------------------------- */
-  /* blockquote --------------------------------------------- */ }
+  /* blockquote --------------------------------------------- */
+  /* 404 --------------------------------------------- */
+  .section__404 { text-align: center; }
+  .section__404 .fa-angle-double-right { padding-right: .2em; } }
 /* =====================================================
 
 set Tablet Large 47.500em(760px) and more
@@ -1190,7 +1198,10 @@ set Tablet Large 47.500em(760px) and more
   /* footer --------------------------------------------- */
   /* pagenate --------------------------------------------- */
   /* entrynate --------------------------------------------- */
-  /* blockquote --------------------------------------------- */ }
+  /* blockquote --------------------------------------------- */
+  /* 404 --------------------------------------------- */
+  .section__404 { text-align: center; }
+  .section__404 .fa-angle-double-right { padding-right: .2em; } }
 /* =====================================================
 
 set DESKTOP 60.000em(960px) and more
@@ -1232,7 +1243,10 @@ set DESKTOP 60.000em(960px) and more
   .entrynate .entrynate__heading { font-size: 24px; font-size: 1.5rem; margin-bottom: .5em; }
   /* blockquote --------------------------------------------- */
   blockquote { padding: .75em .75em .75em 2em; }
-  blockquote:before { font-size: 80px; font-size: 5rem; } }
+  blockquote:before { font-size: 80px; font-size: 5rem; }
+  /* 404 --------------------------------------------- */
+  .section__404 { text-align: center; }
+  .section__404 .fa-angle-double-right { padding-right: .2em; } }
 /* =====================================================
 
 set Print
