@@ -57,7 +57,7 @@ mark { background: #ff0; color: #000; }
 code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
 
 /** Improve readability of pre-formatted text in all browsers. */
-pre { white-space: pre-wrap; }
+pre { /* Mozilla */ white-space: -moz-pre-wrap; /* Opera 4-6 */ white-space: -pre-wrap; /* Opera 7 */ white-space: -o-pre-wrap; /* CSS3 */ white-space: pre-wrap; /* IE 5.5+ */ word-wrap: break-word; }
 
 /** Set consistent quote types. */
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
@@ -959,8 +959,8 @@ a:hover:not(.current) { text-decoration: none; filter: progid:DXImageTransform.M
 
 img { max-width: 100%; }
 
-input[type="text"], input[type="email"], textarea { padding: 4px 6px; color: #888; font-size: 16px; font-size: 1rem; border: solid 1px #AAA; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset; box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus { border: solid 1px #EEA34A; }
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"], input[type="password"] textarea { padding: 4px 6px; color: #888; font-size: 16px; font-size: 1rem; border: solid 1px #AAA; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset; -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset; box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) inset; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="password"] textarea:focus { border: solid 1px #EEA34A; }
 
 .del { text-decoration: line-through !important; }
 
@@ -976,13 +976,7 @@ hr { display: block; border: 0; height: 2px; background: #4d300f; background-ima
 
 .box_shadow_inset { -moz-box-shadow: inset 1px 1px 3px #000; -webkit-box-shadow: inset 1px 1px 3px #000; box-shadow: inset 1px 1px 3px #000; }
 
-.border_radius { border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; }
-
 .transition { -webkit-transition: 1.5s; -moz-transition: 1.5s; -o-transition: 1.5s; transition: 1.5s; }
-
-.opacity { filter: alpha(opacity=25); -moz-opacity: 0.25; opacity: 0.25; }
-
-.bg_opacity { background-color: rgba(255, 255, 255, 0.2); }
 
 .gradient { filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#000000'); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#000000')"; background-image: -moz-linear-gradient(top, white, black); background-image: -ms-linear-gradient(top, white, black); background-image: -o-linear-gradient(top, white, black); background-image: -webkit-gradient(linear, center top, center bottom, from(white), to(black)); background-image: -webkit-linear-gradient(top, white, black); background-image: linear-gradient(top, #ffffff, #000000); }
 
