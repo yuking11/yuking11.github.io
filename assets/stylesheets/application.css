@@ -1135,6 +1135,10 @@ Global
 .entrynate .entrynate__heading:nth-of-type(2) { margin-top: 1em; }
 .entrynate .entrynate__title { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; margin-left: 0; }
 
+/* adsense
+--------------------------------------------- */
+.adsense { margin-bottom: 2em; }
+
 /* blockquote
 --------------------------------------------- */
 blockquote { position: relative; background-color: rgba(255, 250, 238, 0.5); margin: 0 0 1.4em; padding: .5em .5em .5em 1.5em; }
@@ -1176,6 +1180,7 @@ set Tablet Small 32.500em(520px) and more
   /* footer --------------------------------------------- */
   /* pagenate --------------------------------------------- */
   /* entrynate --------------------------------------------- */
+  /* adsense --------------------------------------------- */
   /* blockquote --------------------------------------------- */
   /* 404 --------------------------------------------- */
   .section__404 { text-align: center; }
@@ -1198,6 +1203,7 @@ set Tablet Large 47.500em(760px) and more
   /* footer --------------------------------------------- */
   /* pagenate --------------------------------------------- */
   /* entrynate --------------------------------------------- */
+  /* adsense --------------------------------------------- */
   /* blockquote --------------------------------------------- */
   /* 404 --------------------------------------------- */
   .section__404 { text-align: center; }
@@ -1236,11 +1242,13 @@ set DESKTOP 60.000em(960px) and more
   .footer { margin-top: 5.5em; padding: 2.5em 0; }
   .footer .footer__note--txt { font-size: 16px; font-size: 1rem; }
   /* pagenate --------------------------------------------- */
-  .pagenate { width: 40.000em; margin-left: auto; margin-right: auto; padding-left: 11.000em; margin-bottom: 4.5em; }
+  .pagenate { width: 40.000em; margin-left: auto; margin-right: auto; padding-left: 11.000em; }
   .pagenate .pagenate__prev { left: 11em; }
   /* entrynate --------------------------------------------- */
-  .entrynate { width: 40.000em; margin-left: auto; margin-right: auto; padding-left: 11.000em; margin-bottom: 4.5em; }
+  .entrynate { width: 40.000em; margin-left: auto; margin-right: auto; padding-left: 11.000em; }
   .entrynate .entrynate__heading { font-size: 24px; font-size: 1.5rem; margin-bottom: .5em; }
+  /* adsense --------------------------------------------- */
+  .adsense { width: 40.000em; margin-left: auto; margin-right: auto; padding-left: 11.000em; margin-bottom: 3.5em; }
   /* blockquote --------------------------------------------- */
   blockquote { padding: .75em .75em .75em 2em; }
   blockquote:before { font-size: 80px; font-size: 5rem; }
