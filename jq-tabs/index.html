@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>jq-smooth-scroll</title>
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body {
+      padding: 50px;
+    }
+    h1 ~ h1 {
+      margin-top: 50px;
+    }
+    .tab {
+      width: 80%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      zoom: 1;
+    }
+    .tab__item {
+      float: left;
+      width: 15%;
+      margin-right: 1%;
+    }
+    .tab__item--img {
+      float: left;
+      width: auto;
+      margin-right: 1%;
+    }
+    .tab__item--img img {
+      vertical-align: bottom;
+      border: none;
+    }
+    .tab__item a {
+      background-color: #efefef;
+      display: block;
+      padding: 5px 0 3px;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      border-radius: 5px 5px 0 0;
+      color: #000;
+      text-align: center;
+      text-decoration: none;
+    }
+    .tab__item a:hover,
+    .tab__item .is_active {
+      background-color: #ffd;
+      border-color: #fa0;
+    }
+    .content {
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+    .content__item {
+      padding: 15px;
+    }
+    .acc {
+      width: 80%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      zoom: 1;
+    }
+    .acc__term a {
+      background-color: #efefef;
+      display: block;
+      padding: 5px 10px 3px;
+      border: 1px solid #ccc;
+      color: #000;
+      text-decoration: none;
+    }
+    .acc__term a:hover,
+    .acc__term .is_active {
+      background-color: #ffd;
+      border-color: #fa0;
+    }
+    .acc__desc {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    .acc__desc:not(:last-of-type) {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+<h1>タブ切り替え</h1>
+<div class="tabs" data-tab data-tab-effect="fade" data-tab-speed="300">
+  <ul class="tab">
+    <li class="tab__item"><a href="#tab01" data-tab-label="true">タブ01</a></li>
+    <li class="tab__item"><a href="#tab02" data-tab-label>タブ02</a></li>
+    <li class="tab__item"><a href="#tab03" data-tab-label>タブ03</a></li>
+  </ul>
+  <div class="content">
+    <div id="tab01" class="content__item" data-tab-content="true">コンテンツ01</div>
+    <div id="tab02" class="content__item" data-tab-content>コンテンツ02</div>
+    <div id="tab03" class="content__item" data-tab-content>コンテンツ03</div>
+  </div>
+</div>
+
+<h1>アコーディオン</h1>
+<div class="acc" data-tab data-tab-effect="slide" data-tab-speed="300">
+  <div class="acc__term"><a href="#acc01" data-tab-label>アコーディオン01</a></div>
+  <div id="acc01" class="acc__desc" data-tab-content>コンテンツ01</div>
+  <div class="acc__term"><a href="#acc02" data-tab-label>アコーディオン02</a></div>
+  <div id="acc02" class="acc__desc" data-tab-content>コンテンツ02</div>
+  <div class="acc__term"><a href="#acc03" data-tab-label>アコーディオン03</a></div>
+  <div id="acc03" class="acc__desc" data-tab-content>コンテンツ03</div>
+</div>
+
+<h1>タブ切り替え（画像）</h1>
+<div class="tabs" data-tab="image" data-tab-effect="fade" data-tab-speed="300">
+  <ul class="tab">
+    <li class="tab__item--img"><a href="#tab01" data-tab-label="true"><img src="img/tab01.png" alt="タブ01"></a></li>
+    <li class="tab__item--img"><a href="#tab02" data-tab-label><img src="img/tab02.png" alt="タブ02"></a></li>
+    <li class="tab__item--img"><a href="#tab03" data-tab-label><img src="img/tab03.png" alt="タブ03"></a></li>
+  </ul>
+  <div class="content">
+    <div id="tab01" class="content__item" data-tab-content="true">コンテンツ01</div>
+    <div id="tab02" class="content__item" data-tab-content>コンテンツ02</div>
+    <div id="tab03" class="content__item" data-tab-content>コンテンツ03</div>
+  </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="./js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="./js/application.js"></script>
+</body>
+</html>
