@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>jq-smooth-scroll</title>
+  <style>
+    body {
+      padding: 50px;
+    }
+    .nav {
+      margin-bottom: 200px;
+      padding: 0;
+    }
+    .contents {
+      background-color: #eee;
+      height: 500px;
+      margin-bottom: 200px;
+    }
+    .contents + .contents {
+      background-color: #fee;
+    }
+    .contents + .contents + .contents {
+      background-color: #eef;
+    }
+  </style>
+</head>
+<body>
+
+<ul class="nav">
+  <li><a href="#smooth-1" data-scroll>スムーズスクロール</a></li>
+  <li><a href="#smooth-2" data-scroll="50">スムーズスクロール（数値指定：50px）</a></li>
+  <li><a href="#anchor">通常アンカーリンク</a></li>
+</ul>
+
+<div id="smooth-1" class="contents">スムーズスクロール</div>
+<div id="smooth-2" class="contents">スムーズスクロール（数値指定：50px）</div>
+<div id="anchor" class="contents">通常アンカーリンク</div>
+
+
+<!-- ページトップにスムーズスクロール -->
+<a href="#page_top" data-scroll>ページトップへ</a>
+
+
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="./js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
+<script src="./js/application.js"></script>
+</body>
+</html>
